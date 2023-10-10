@@ -4,6 +4,12 @@ html body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: white;
+    color: #313131;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Navigation */
@@ -35,12 +41,11 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
     color: #313131;
-    transition: 0s background-color;
+    transition: 0.3s color ease-in-out;
 }
   
 li a:hover {
     color: #C41010;
-    transition-delay: 300ms;
 }
 
 .current_tab {
@@ -51,27 +56,27 @@ li a:hover {
 
 /* Main */
 
-.main {
+main {
+    background-color: white;
     position: fixed;
     overflow-x: hidden;
     margin: 0;
     display: inline-block;
-    border: 1px solid red;
     width: 100%;
     height: 100%;
 }
 
-.main header {
+main header {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    width: 50%;
+    margin-top: 60px;
+    width: 100%;
     text-align: center;
     font-size: 18px;
 }
 
-.main header img {
+main header img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -82,51 +87,155 @@ li a:hover {
 /* Home page */
 
 .show_articles{
+    background-color: white;
     overflow: hidden;
     display: inline-block;
+    margin-top: 50px;
     padding: 10px;
     width: 100%;
     height: 350px;
 }
 
 .article_box {
-    border: 1px solid green;
-    width: 240px;
-    height: 300px;
+    transition: height ease 0.5s, transform ease 0.5s, box-shadow ease 0.5s;
+    box-shadow: 0px 2px 10px lightgray;
+    border-radius: 5px;
+    width: 250px;
+    height: 85%;
+    padding: 0px;
+    margin-right: 120px;
+    float: right;
+}
+
+.article_box img {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    border-radius: 5px;
+}
+
+.article_box .subtitle {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    color: #313131;
+}
+
+.hide {
+    transition: all ease 0.5s;
+    display: block;
+    margin-top: -10px;
+    text-align: center;
+    opacity: 0;
+    color: #313131;
+}
+
+.article_box:hover .hide {
+    display: block;
+    margin-top: -10px;
+    font-size: 17px;
+    margin-left: 2px;
+    opacity: 1;
+}
+
+.article_box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 2px 20px #C41010;
+    width: 250px;
     height: 90%;
-    margin-right: 50px;
+    padding: 0px;
+    margin-right: 120px;
     float: right;
 }
 
 .article_title {
     display: inline-block;
-    width: 50%;
+    width: 500px;
     height: 90%;
     line-height: 280px;
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 10%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .show_articles{
+        border: 1px solid red;
+        overflow: hidden;
+        display: inline-block;
+        padding: 10px;
+        width: 100%;
+        height: 350px;
+        text-align: left;
+    }
+    
+    .article_box {
+        border: 1px solid green;
+        width: 240px;
+        height: 300px;
+        height: 90%;
+        padding: 10px;
+        margin-right: 50px;
+        float: right;
+    }
+    
+    .article_title {
+        display: inline-block;
+        width: 50%;
+        height: 90%;
+        line-height: 280px;
+        font-size: 20px;
+        margin-left: 10%;
+    }
 }
 
 /* End home page */
 
-/* Footer */
+/* Article page */
 
-/* footer {
-    position: absolute;
-    height: 100px;
-    width: 100%;
-    bottom: 10px;
+.article_list {
+    display: flex;
+    gap: 20px;
     align-items: center;
-    justify-content: center;
-    box-shadow: 1px 0px 2px 1px lightgrey;
+    flex-direction: column;
 }
 
-.footer {
-    width: 100%;
+.article_list article {
+    display: inline-block;
+    box-shadow: 0px 2px 10px lightgray;
+    border-radius: 5px;
+    width: 80%;
+    height: 115px;
+    padding: 10px;
+}
+
+.article_list section {
+    display: flex;
+}
+
+.article_list .article_text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.article_list h1 {
+    font-size: 30px;
+    margin-right: 40%;
+}
+
+.article_list img {
     height: 100%;
-    text-align: center;
-    padding: 25px;
-} */
+    width: 115px;
+    border-radius: 5px;
+}
+
+
+/* End article page */
+
+/* Footer */
 
 footer {
     position: absolute;
@@ -134,9 +243,11 @@ footer {
     width: 101%;
     box-sizing: border-box;
     text-align: center;
+    margin-top: 50px;
     padding: 25px;
     background-color: white;
     box-shadow: 1px 0px 2px 1px lightgrey;
+    font-style: bold;
 }
 
 /* End footer */

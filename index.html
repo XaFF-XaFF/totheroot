@@ -9,43 +9,56 @@
 <body>
   <nav>
     <ul>
-      <li><a class="current_tab">Home</a></li>
-      <li><a>Articles</a></li>
-      <li><a>Contact</a></li>
+      <li><a href="index.html" class="current_tab">Home</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <main class="main">
+  <main>
     <header>
       <img src="img/logo.png" alt="ToTheRoot logo" width="650" height="300">
       <p>Blog dedicated to rootkits</p>
     </header>
     <article class="show_articles">
       <section class="article_title">
-        <h2>Recommended articles</h2>
+        <h2>Recommended Articles</h2>
       </section>
-      <section class="article_box">
-        
-      </section>
-      <section class="article_box">
-        
-      </section>
+      <a href="articles/deep_dive.html">
+        <section class="article_box">
+          <img src="img/blackangel.png" alt="Cyberpunk robot in a city">
+          <p class="subtitle">Deep Dive Into The Root</p>
+          <p class="hide">Starting windows kernel...</p>
+        </section>
+      </a>
+      <a href="articles/understanding_rootkits.html">
+        <section class="article_box">
+          <img src="img/rootkit.png" alt="Kdmapper injecting rootkit">
+          <p class="subtitle">Understanding Rootkits</p>
+          <p class="hide">A rootkit is type of soft...</p>
+        </section>
+      </a>
     </article>
     <article class="show_articles">
       <section class="article_title">
-        <h2>New articles</h2>
+        <h2>New Articles</h2>
       </section>
-      <section class="article_box">
-        
-      </section>
-      <section class="article_box">
-        
-      </section>
+      <a href="articles/deep_dive.html">
+        <section class="article_box">
+          <img src="img/kdmapper.png" alt="Kdmapper injecting rootkit">
+          <p class="subtitle">Drilling Into The Root</p>
+          <p class="hide">In the even changing realm...</p>
+        </section>
+      </a>
+      <a href="articles/understanding_rootkits.html">
+        <section class="article_box">
+          <img src="img/stuxnet.png" alt="Kdmapper injecting rootkit">
+          <p class="subtitle">Stuxnet</p>
+          <p class="hide">Stuxnet, the groundbreaking...</p>
+        </section>
+      </a>
     </article>
     <footer>
       <p>&copy; 2023 ToTheRoot. All rights reserved.</p>
-      <!-- <section class="footer">
-        <p>&copy; 2023 ToTheRoot. All rights reserved.</p>
-      </section> -->
     </footer>
   </main>
 </body>

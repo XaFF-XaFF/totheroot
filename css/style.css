@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-body {
+html body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 /* Navigation */
 
 nav {
-    display: fixed;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
     box-shadow: 1px 0px 2px 1px lightgray;
+    background-color: white;
     height: 70px;
 }
 
@@ -49,6 +53,8 @@ li a:hover {
 
 .main {
     position: fixed;
+    overflow-x: hidden;
+    margin: 0;
     display: inline-block;
     border: 1px solid red;
     width: 100%;
@@ -59,6 +65,7 @@ li a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
     width: 50%;
     text-align: center;
     font-size: 18px;
@@ -74,54 +81,62 @@ li a:hover {
 
 /* Home page */
 
-.show_articles {
-    text-align: center;
-}
-
 .show_articles{
+    overflow: hidden;
     display: inline-block;
-    border: 1px solid red;
     padding: 10px;
     width: 100%;
-    height: 250px;
+    height: 350px;
 }
 
 .article_box {
-    position: relative;
     border: 1px solid green;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
+    width: 240px;
+    height: 300px;
+    height: 90%;
+    margin-right: 50px;
     float: right;
 }
 
 .article_title {
-    text-align: center;
-    float: left;
+    display: inline-block;
+    width: 50%;
+    height: 90%;
+    line-height: 280px;
+    font-size: 20px;
+    margin-left: 10%;
 }
-
 
 /* End home page */
 
 /* Footer */
 
-footer {
-    position: fixed;
-    display: fixed;
+/* footer {
+    position: absolute;
     height: 100px;
     width: 100%;
-    bottom: 0;
+    bottom: 10px;
     align-items: center;
     justify-content: center;
     box-shadow: 1px 0px 2px 1px lightgrey;
 }
 
 .footer {
-    position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     padding: 25px;
+} */
+
+footer {
+    position: absolute;
+    height: 100px;
+    width: 101%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 1px 0px 2px 1px lightgrey;
 }
 
 /* End footer */

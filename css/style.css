@@ -97,7 +97,7 @@ main header img {
 }
 
 .article_box {
-    transition: height ease 0.5s, transform ease 0.5s, box-shadow ease 0.5s;
+    transition: height ease 0.5s, transform ease 0.5s, box-shadow ease 0.5s, opacity ease 0.3s;
     box-shadow: 0px 2px 10px lightgray;
     border-radius: 5px;
     width: 250px;
@@ -123,20 +123,23 @@ main header img {
 }
 
 .hide {
-    transition: all ease 0.5s;
+    transition: opacity ease 0.3s, transform ease 0.3s;
     display: block;
-    margin-top: -10px;
     text-align: center;
+    margin-top: -5px;
+    font-size: 17px;
     opacity: 0;
     color: #313131;
 }
 
 .article_box:hover .hide {
+    transform: translateY(-5px);
     display: block;
-    margin-top: -10px;
+    text-align: center;
+    margin-top: -5px;
     font-size: 17px;
-    margin-left: 2px;
     opacity: 1;
+    color: #313131;
 }
 
 .article_box:hover {
@@ -193,16 +196,30 @@ main header img {
 
 /* Article page */
 
+.heading {
+    display: inline;
+    position: relative;
+    margin-left: 10%;;
+}
+
 .article_list {
+    margin-top: 20px;
     display: flex;
     gap: 20px;
     align-items: center;
     flex-direction: column;
+    box-shadow: 0px;
+}
+
+.article_list a {
+    text-decoration: none;
+    color: #313131;
 }
 
 .article_list article {
-    display: inline-block;
+    transition: box-shadow ease 0.5s;
     box-shadow: 0px 2px 10px lightgray;
+    display: inline-block;
     border-radius: 5px;
     width: 80%;
     height: 115px;
@@ -217,21 +234,52 @@ main header img {
     display: flex;
     flex-direction: column;
     margin-top: 1px;
-    margin-left: 10px;
+    margin-left: 20px;
     font-size: 20px;
 }
 
-.article_list h1 {
-    font-size: 30px;
-    margin-right: 40%;
-}
-
 .article_list img {
-    height: 100%;
+    height: 115px;
     width: 115px;
     border-radius: 5px;
 }
 
+.article_list .title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.article_list .description {
+    margin-top: -10px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.hide_description {
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.dots {
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.article_list article:hover {
+    box-shadow: 0px 2px 20px #C41010;
+}
+
+.article_list article:hover .dots {
+    opacity: 0;
+}
+
+.article_list article:hover .hide_description {
+    opacity: 1;
+    margin-top: 0px;
+    font-size: 18px;
+    margin-right: 100px;
+}
 
 /* End article page */
 

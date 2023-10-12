@@ -12,6 +12,25 @@ a {
     text-decoration: none;
 }
 
+button {
+    transition: transform ease 0.5s, box-shadow ease 0.5s;
+    color: white;
+    background-color: #C41010;
+    box-shadow: 0px 2px 10px lightgray;
+    border: 0px;
+    border-radius: 10px;
+    width: 160px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 2px 10px #313131;
+}
+
 /* Navigation */
 
 nav {
@@ -285,6 +304,72 @@ main header img {
 
 /* Contact page */
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+form .holder {
+    display: inline;
+    /* border: 1px solid purple; */
+    width: 20%;
+}
+
+
+
+form .contact_input {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+form label {
+    padding: 10px;
+}
+
+form input {
+    border: 1.5px solid #a6a6a6;
+    border-radius: 5px;
+    height: 40px;
+}
+
+form .title {
+    width: 15%;
+}
+
+form .name {
+    width: 85%;
+}
+
+form .email {
+    width: 100%;
+}
+
+form .prefix {
+    width: 15%;
+}
+
+/* Disable number arrows and scroll */
+form .phone_number::-webkit-outer-spin-button,
+form .phone_number::-webkit-inner-spin-button,
+form .phone_number[type=number] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    width: 85%;
+}
+
+form .information {
+    width: 100%;
+    height: 250px;
+}
+
+.contact_row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
 
 
 /* End contact page */
@@ -294,14 +379,18 @@ main header img {
 footer {
     position: absolute;
     height: 100px;
-    width: 101%;
+    width: 100%;
     box-sizing: border-box;
     text-align: center;
-    margin-top: 50px;
+    bottom: 0;
     padding: 25px;
     background-color: white;
     box-shadow: 1px 0px 2px 1px lightgrey;
     font-style: bold;
+}
+
+.lower_footer {
+    bottom: -150px
 }
 
 /* End footer */

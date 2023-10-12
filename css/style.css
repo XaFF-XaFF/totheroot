@@ -50,6 +50,10 @@ legend {
     color: cmyk(0%, 22%, 83%, 0%);
 }
 
+.spacer {
+    margin-top: 100px;
+}
+
 /* Navigation */
 
 nav {
@@ -124,9 +128,13 @@ main header img {
 
 /* Home page */
 
+.articles {
+    width: 98%;
+}
+
 .show_articles{
+    position: relative;
     background-color: white;
-    overflow: hidden;
     display: inline-block;
     margin-top: 50px;
     padding: 10px;
@@ -392,7 +400,6 @@ form .information {
 /* Article */
 
 .article {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -449,8 +456,6 @@ form .information {
 .article_content aside img {
     box-shadow: 0px 2px 10px #C41010;
     margin-top: 100px;
-    width: 50%;
-    height: 70%;
 }
 
 .smaller {
@@ -491,8 +496,20 @@ form .information {
     width: 85%;
 }
 
-#margin_top_200 {
+.margin_top_200 {
     margin-top: 220px;
+}
+
+.margin_top_300 {
+    margin-top: 300px;
+}
+
+.margin_top_350 {
+    margin-top: 350px;
+}
+
+.margin_top_400 {
+    margin-top: 400px;
 }
 
 .recommended {
@@ -525,6 +542,7 @@ footer {
     position: absolute;
     height: 100px;
     width: 100%;
+    margin-top: 100px;
     box-sizing: border-box;
     text-align: center;
     bottom: 0;
@@ -532,6 +550,7 @@ footer {
     background-color: white;
     box-shadow: 1px 0px 2px 1px lightgrey;
     font-style: bold;
+    clear: both;
 }
 
 .lower_footer {

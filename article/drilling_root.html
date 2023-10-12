@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="../img/favicon.png">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
-  <title>ToTheRoot - Understanding Rootktis</title>
+  <title>ToTheRoot - Drilling Into The Root</title>
 </head>
 <body>
   <nav>
@@ -18,29 +18,36 @@
   <main class="article">
     <header>
       <img src="../img/logo.png" width="200px" height="100px" alt="ToTheRoot logo">
-      <h1>Stuxnet: The Perfect Cyberweapon</h1>
+      <h1>Drilling Into The Root</h1>
     </header>
     <article class="article_content">
       <section>
-        <h2><span class="heading_dot"></span> Stuxnet</h2>
+        <h2><span class="heading_dot"></span> Loading</h2>
         <p>
-          Stuxnet, the groundbreaking cyber weapon that emerged in 2010 stood out not for its complexity but also for its sophisticated rootkit functionality. The fact that Stuxnet possessed both the characteristics of a cyber weapon and a rootkit showcased its capabilities.
+          In the ever changing realm of cybersecurity threats, rootkits are a type of malicious software that stands out as particularly sneaky. These covert programs are skilled at infiltrating computer systems and gaining long term control, often targeting the Windows kernel, which is a vital part of the Windows operating system. To truly grasp the extent of their infiltration, it's crucial to understand how rootkits are loaded into the Windows kernel.
         </p>
         <p>
-          As a rootkit Stuxnet had the ability to infiltrate computer systems at a level gaining access, to the core and effectively concealing its presence. This rootkit feature played a role in its success by allowing it to operate undetected while carrying out its mission of disrupting Iran’s nuclear program.
+          The process of loading a rootkit into the Windows kernel involves several complex steps;
         </p>
-        <h2><span class="heading_dot"></span> Capabilities</h2>
+        <h2><span class="heading_dot"></span> Vulnerabilities</h2>
         <p>
-          With its rootkit capabilities Stuxnet could precisely manipulate industrial control systems and programmable logic controllers (PLCs) all while remaining hidden from detection. This unique combination of rootkit features alongside its objectives as a cyber weapon made Stuxnet an influential example of how malware can compromise systems and even cause physical damage in the real world.  
-        </p>
-        <h2><span class="heading_dot"></span> Threat</h2>
-        <p>
-          With its rootkit capabilities Stuxnet could precisely manipulate industrial control systems and programmable logic controllers (PLCs) all while remaining hidden from detection. This unique combination of rootkit features alongside its objectives as a cyber weapon made Stuxnet an influential example of how malware can compromise systems and even cause physical damage in the real world.  
+          Exploiting Vulnerabilities; Rootkit developers actively search for weaknesses within the Windows operating system, such as flaws in device drivers or unpatched security vulnerabilities. Once they find these weaknesses, they either create or use existing exploits that allow them to execute code with high level privileges in the kernel.
         </p>
       </section>
       <aside>
-        <img src="../img/stuxnet.png" alt="Robot soldier representing Stuxnet">
+        <img src="../img/kdmapper.png" alt="Kdmapper injecting rootkit" title="Kdmapper" width="500px" height="350px">
       </aside>
+    </article>
+    <article class="article_content">
+      <aside>
+        <img src="../img/reverse_shell.png" alt="Reverse shell connection" title="Reverse Shell" width="400px" height="200px">
+      </aside>
+      <section>
+        <h2><span class="heading_dot"></span> Loading</h2>
+        <p>
+          Installing Kernel Drivers; After successfully exploiting a vulnerability, attackers proceed to install a malicious driver that operates at the same privilege level as the Windows kernel itself. This driver is an integral part of the rootkit and gives it extensive privileges and control over the compromised system.
+        </p>
+      </section>
     </article>
     <section class="separator margin_top_350"></section>
     <section class="recommended_section">

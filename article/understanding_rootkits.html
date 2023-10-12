@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <title>ToTheRoot - Understanding Rootktis</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../articles.html">Articles</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main class="article">
+    <header>
+      <img src="../img/logo.png" width="200px" height="100px" alt="ToTheRoot logo">
+      <h1>Understanding Rootkits: Stealthy Digital Invaders</h1>
+    </header>
+    <article class="article_content">
+      <section>
+        <h2><span class="heading_dot"></span> What is a rootkit?</h2>
+        <p>
+          A rootkit is a type of software that operates covertly on a computer system with the intention of <b>concealing its presence</b> and gaining <b>unauthorized access or control</b>. The term "rootkit" is derived from <b>"root"</b>, which represents the <b>level of access</b>, in Unix based operating systems and "kit," which refers to the collection of software components that constitute this tool.
+        </p>
+        <h2><span class="heading_dot"></span> What are rootkits used for?</h2>
+        <p>
+          Rootkits are specifically designed to <b>evade detection</b> by the systems security mechanisms, antivirus software and even the user. They can manipulate system files alter system calls and substitute programs thereby making it <b>extremely challenging to identify and eliminate them</b>.
+        </p>
+        <p>&nbsp;</p>
+        <p>
+          There are two categories of rootkits: <b>user mode rootkits</b> and <b>kernel mode rootkits</b>. <b>User mode rootkits</b> function at the privilege level as applications while <b>kernel mode rootkits</b> operate at a deeper level within the system providing them with more power and making them significantly more difficult to detect.
+        </p>
+      </section>
+      <aside>
+        <img src="../img/rootkit.png">
+      </aside>
+    </article>
+    <article class="article_content">
+      <aside class="stretch">
+        <img src="../img/privilege_escalation.png" alt="Terminal process gaining system privileges with rootkit's help">
+      </aside>
+      <section>
+        <h2><span class="heading_dot"></span> Challenges posed by rootkits</h2>
+        <p>
+          Rootkits pose a cybersecurity threat as they can be employed for nefarious purposes such as <b>monitoring user activities, stealing sensitive data or facilitating additional attacks</b>. Detecting and removing rootkits necessitates tools and expertise thereby <b>presenting a challenge</b>, for security professionals.
+        </p>
+      </section>
+    </article>
+    <section class="separator"></section>
+    <section class="recommended_section">
+      <section class="read_more">
+        <h1>Other Articles That You Might Like</h1>
+      </section>
+      <section class="recommended">
+        <article class="show_articles flex">
+          <a href="deep_dive.html">
+            <section class="article_box center_article">
+              <img src="../img/blackangel.png" alt="BlackAngel rootkit control panel">
+              <p class="subtitle">Deep Dive Into The Root</p>
+              <p class="hide">Starting windows kernel...</p>
+            </section>
+          </a>
+          <a href="stuxnet.html">
+            <section class="article_box center_article">
+              <img src="../img/stuxnet.png" alt="Robot soldier representing Stuxnet">
+              <p class="subtitle">Stuxnet</p>
+              <p class="hide">Stuxnet, the groundbreaking...</p>
+            </section>
+          </a>
+        </article>
+      </section>
+    </section>
+    <footer class="px-300">
+      <p>&copy; 2023 ToTheRoot. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>

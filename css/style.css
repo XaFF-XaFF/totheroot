@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-html body {
+html, body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -10,6 +10,10 @@ html body {
 
 a {
     text-decoration: none;
+}
+
+h1, h2 {
+    color: #313131;
 }
 
 button {
@@ -313,11 +317,8 @@ form {
 
 form .holder {
     display: inline;
-    /* border: 1px solid purple; */
     width: 20%;
 }
-
-
 
 form .contact_input {
     display: flex;
@@ -371,8 +372,124 @@ form .information {
     margin-top: 5px;
 }
 
-
 /* End contact page */
+
+/* Article */
+
+.article {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.article header {
+    width: 35%;
+    height: 12%;
+    font-size: 22px;
+}
+
+.article_content {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 500px;
+    margin-top: 2rem;
+}
+
+.article_content section {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.article_content section p {
+    margin-top: -10px;
+    font-size: 18.5px;
+}
+
+.article_content section h2 {
+    color: #313131;
+    text-align: left;
+}
+
+.article_content aside {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.article_content aside img {
+    box-shadow: 0px 2px 10px #C41010;
+    margin-top: 100px;
+    width: 50%;
+    height: 70%;
+}
+
+.smaller {
+    width: 300px;
+    height: 125px;
+}
+
+.stretch {
+    margin-top: -25px;
+    width: 600px;
+    height: 250px;
+}
+
+.heading_dot {
+    height: 10px;
+    width: 10px;
+    background-color: #C41010;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 2px;
+    box-shadow: 0px 2px 10px lightgray;
+}
+
+.recommended_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.separator {
+    margin-top: 50px;
+    margin-bottom: -50px;
+    border: 1px dashed #C41010;
+    width: 85%;
+}
+
+.recommended {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 84%;
+}
+
+.center_article {
+    float: none;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.read_more {
+    margin-bottom: -50px;
+    font-size: 22px;
+}
+
+/* End article */
 
 /* Footer */
 
@@ -391,6 +508,10 @@ footer {
 
 .lower_footer {
     bottom: -150px
+}
+
+.px-300 {
+    bottom: -300px;
 }
 
 /* End footer */

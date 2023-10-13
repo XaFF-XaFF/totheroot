@@ -465,6 +465,65 @@ main header img {
     margin-right: 100px;
 }
 
+@media only screen and (max-width: 1280px) and (min-width: 481px) {
+
+    .article_list article {
+        height: auto;
+    }
+
+    .article_list .title{
+        text-align: center;
+    }
+
+    .article_list .description {
+        text-align: left;
+    }
+
+    .article_list article section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+
+    .article_list article {
+        height: auto;
+    }
+
+    .article_list article section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        height: 100%;
+    }
+
+    .article_list .title, .description {
+        text-align: center;
+    }
+
+    .hide_description, .dots{
+        display: none;
+    }
+}
+
+@media (hover: none) {
+
+    .article_list .description {
+        text-align: center;
+    }
+
+    .hide_description {
+        display: none;
+    }
+}
+
 /* End article page */
 
 /* Contact page */
@@ -518,7 +577,6 @@ form .phone_number::-webkit-outer-spin-button,
 form .phone_number::-webkit-inner-spin-button,
 form .phone_number[type=number] {
     -webkit-appearance: none;
-    -moz-appearance: textfield;
     width: 85%;
 }
 

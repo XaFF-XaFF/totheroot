@@ -722,6 +722,7 @@ form .information {
 .flex {
     display: flex;
     flex-direction: row;
+    gap: 50px;
 }
 
 .read_more {

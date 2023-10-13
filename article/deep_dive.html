@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>ToTheRoot - Deep Dive Into The Root</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../articles.html">Articles</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main class="article">
+    <header>
+      <img src="../img/logo.png" width="200px" height="100px" alt="ToTheRoot logo">
+      <h1>Deep Dive Into The Root</h1>
+    </header>
+    <article class="article_content">
+      <section>
+        <h2><span class="heading_dot"></span> Loading</h2>
+        <p>
+          Starting Windows kernel development is a complex and advanced task that requires a deep understanding of operating system internals and programming skills. Here are the fundamental steps to begin:
+        </p>
+        <p>
+          Prerequisite Knowledge: You should be proficient in C/C++ programming and have a strong grasp of data structures, algorithms, and computer architecture.
+        </p>
+        <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk">
+          <button>Download WDK</button>
+        </a>
+      </section>
+      <aside>
+        <img src="../img/blackangel.png" alt="BlackAngel rootkit control panel" title="BlackAngel" width="500px" height="350px">
+      </aside>
+    </article>
+    <article class="article_content margin_top_50">
+      <section>
+        <h2><span class="heading_dot"></span> Learn Windows Internals:</h2>
+        <p>
+          Study books like "Windows Internals" by Mark Russinovich and David Solomon to gain insights into how Windows operates at a kernel level. Book “Windows Kernel Programming” by Pavel Yosifovich should also be taken under consideration.
+        </p>
+        <h2><span class="heading_dot"></span> Basic Driver Development:</h2>
+        <p>
+          Start with simple kernel-mode drivers, like a "Hello World" driver, to get familiar with the driver development process.
+        </p>
+        <h2><span class="heading_dot"></span> Understanding Driver Types:</h2>
+        <p>
+          Learn about the different types of drivers, including file system drivers, device drivers, and filter drivers.
+        </p>
+      </section>
+      <aside>
+        <video width="700px" height="350px">
+          <source src="../media/video.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+      </aside>
+    </article>
+    <article class="article_content margin_top_50">
+      <aside class="column">
+        <h2><span class="heading_dot"></span> Required tools:</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Visual Studio 2022</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Windows Driver Kit</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>WinDBG</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Virtual Machine</td>
+            </tr>
+          </tbody>
+        </table>
+      </aside>
+      <section>
+        <h2><span class="heading_dot"></span> Learn Windows Internals:</h2>
+        <p>
+          Study books like "Windows Internals" by Mark Russinovich and David Solomon to gain insights into how Windows operates at a kernel level. Book “Windows Kernel Programming” by Pavel Yosifovich should also be taken under consideration.
+        </p>
+        <h2><span class="heading_dot"></span> Basic Driver Development:</h2>
+        <p>
+          Start with simple kernel-mode drivers, like a "Hello World" driver, to get familiar with the driver development process.
+        </p>
+        <h2><span class="heading_dot"></span> Understanding Driver Types:</h2>
+        <p>
+          Learn about the different types of drivers, including file system drivers, device drivers, and filter drivers.
+        </p>
+        <h2><span class="heading_dot"></span> Kernel Debugging:</h2>
+        <p>
+          Set up kernel debugging tools to troubleshoot and analyze your drivers effectively.
+        </p>
+      </section>
+    </article>
+    <article class="article_content margin_top_50">
+      <section>
+        <h2><span class="heading_dot"></span> Driver Signing:</h2>
+        <p>
+          Understand driver signing requirements and how to sign your drivers for deployment.
+        </p>
+        <h2><span class="heading_dot"></span> Community and Resources:</h2>
+        <p>
+          Join online forums, communities, and attend conferences related to Windows kernel development to learn from experts and stay updated.
+        </p>
+        <h2><span class="heading_dot"></span> Experiment and Test:</h2>
+        <p>
+          Experiment with various driver projects, implement real-world scenarios, and extensively test your code.
+        </p>
+      </section>
+      <aside class="column">
+        <img src="../img/shellcode_injection.png">
+      </aside>
+    </article>
+    <section class="separator"></section>
+    <section class="recommended_section">
+      <section class="read_more">
+        <h1>Other Articles That You Might Like</h1>
+      </section>
+      <section class="recommended">
+        <article class="show_articles flex">
+          <a href="deep_dive.html">
+            <section class="article_box center_article">
+              <img src="../img/rootkit.png" alt="Cyberpunk rootkit robot" title="Cyberpunk Robot">
+            <p class="subtitle">Understanding Rootkits</p>
+            <p class="hide">A rootkit is type of soft...</p>
+            </section>
+          </a>
+          <a href="drilling_root.html">
+            <section class="article_box center_article">
+              <img src="../img/stuxnet.png" alt="Robot soldier representing Stuxnet" title="Stuxnet">
+              <p class="subtitle">Stuxnet</p>
+              <p class="hide">Stuxnet, the groundbreaking...</p>
+            </section>
+          </a>
+        </article>
+      </section>
+    </section>
+    <footer>
+      <p>&copy; 2023 ToTheRoot. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>

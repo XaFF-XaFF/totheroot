@@ -54,6 +54,26 @@ legend {
     margin-top: 100px;
 }
 
+table {
+  border: 1px solid #C41010;
+  box-shadow: 0px 1px 5px #C41010;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+td {
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 0.3rem;
+}
+
+td {
+    text-align: left;
+}
+
+
 /* Navigation */
 
 nav {
@@ -254,7 +274,6 @@ main header img {
     gap: 20px;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px;
 }
 
 .article_list a {
@@ -494,20 +513,21 @@ form .information {
     width: 85%;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.margin_top_50 {
+    margin-top: 50px;
+}
+
 .margin_top_200 {
-    margin-top: 220px;
+    margin-top: 200px;
 }
 
 .margin_top_300 {
     margin-top: 300px;
-}
-
-.margin_top_350 {
-    margin-top: 350px;
-}
-
-.margin_top_400 {
-    margin-top: 400px;
 }
 
 .recommended {
@@ -547,7 +567,6 @@ footer {
     padding: 25px;
     background-color: white;
     box-shadow: 1px 0px 2px 1px lightgrey;
-    font-style: bold;
     clear: both;
 }
 

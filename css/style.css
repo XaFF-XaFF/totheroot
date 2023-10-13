@@ -292,7 +292,6 @@ main header img {
         height: 80%;
     }
 
-
     .articles_container {
         position: relative;
         display: flex;
@@ -331,50 +330,9 @@ main header img {
         text-align: center;
     } 
 
-    /* .show_articles{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .articles_container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 250px;
-        height: 400px;
-        gap: 5px;
-    }
-
-    .pointer {
-        position: relative;
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        margin-top: 1rem;
-    }
-
-    .article_box {
-        position: relative;
-        transition: height ease 0.5s, transform ease 0.5s, box-shadow ease 0.5s, opacity ease 0.3s;
-        box-shadow: 0px 2px 10px lightgray;
-        border-radius: 5px;
-        width: 250px;
-        height: 90%;
-    }
-    
-    .article_title {
-        display: flex;
-        width: 100%;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-    }
-
     .hide {
         display: none;
-    } */
+    } 
 }
 
 .article_box img {

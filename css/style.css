@@ -11,7 +11,7 @@ html, body {
     width: 100%;
 }
 
-a {
+a + p {
     text-decoration: none;
 }
 
@@ -39,6 +39,14 @@ button:hover {
 }
 
 fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    grid-template-areas: 
+        "a b b"
+        "a a a"
+        "a b b"
+        "a a a";
     gap: 20px;
     border: 0;
 }
@@ -171,7 +179,6 @@ main header img {
 }
 
 .show_articles{
-    /* border: 1px solid red; */
     position: relative;
     background-color: white;
     display: flex;
@@ -189,7 +196,6 @@ main header img {
 .articles_container {
     display: flex;
     flex-direction: row;
-    /* border: 1px solid purple; */
     width: 50%;
     height: 95%;
 }
@@ -541,12 +547,8 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
-}
-
-form .holder {
-    display: inline;
-    width: 20%;
 }
 
 form .contact_input {
@@ -757,11 +759,6 @@ form .information {
         flex-direction: column;
         align-items: center;
     }
-
-    /* .article_content img {
-        width: 80%;
-        height: 80%;
-    } */
 
     .flex {
         height: auto;

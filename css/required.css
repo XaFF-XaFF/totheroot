@@ -1,0 +1,32 @@
+.required_main > ol {
+    background-color: white;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    background-color: cmyk(0%, 22%, 83%, 0%);
+}
+
+.class {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.class li {
+    background: rgb(255, 199, 43); /* From CMYK */
+    border: 1px solid black;
+    color: black;
+    overflow: hidden;
+    width: 10%;
+    height: 50px;
+}
+
+
+.main_section {
+    display: flex;
+}

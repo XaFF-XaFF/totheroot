@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html, body {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -176,7 +176,6 @@ main header img {
     flex-direction: row;
     flex-shrink: 2;
     justify-content: space-evenly;
-    gap: auto;
     align-items: center;
     margin-top: 50px;
     padding: 10px;
@@ -225,7 +224,6 @@ main header img {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        gap: auto;
         align-items: center;
         margin-top: 50px;
         padding: 10px;
@@ -282,7 +280,6 @@ main header img {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        gap: auto;
         align-items: center;
         padding: 10px;
         width: 97%;
@@ -574,11 +571,7 @@ form .prefix {
     width: 15%;
 }
 
-/* Disable number arrows and scroll */
-form .phone_number::-webkit-outer-spin-button,
-form .phone_number::-webkit-inner-spin-button,
 form .phone_number[type=number] {
-    -webkit-appearance: none;
     width: 85%;
 }
 
@@ -782,7 +775,7 @@ form .information {
         height: 80%;
     }
 
-    #img_medium {
+    .img_medium {
         width: 300px;
         height: 350px;
     }

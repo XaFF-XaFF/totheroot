@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
 .required_main > ol {
-    background-color: white;
+    background-color: #ffffff;
     position: relative;
     overflow-x: hidden;
     margin: 0;
@@ -7,7 +9,6 @@
     flex-direction: column;
     width: 100%;
     min-height: 100%;
-    background-color: cmyk(0%, 22%, 83%, 0%);
 }
 
 .class {
@@ -19,8 +20,8 @@
 
 .class li {
     background: rgb(255, 199, 43); /* From CMYK */
-    border: 1px solid black;
-    color: black;
+    border: 1px solid #000;
+    color: #000;
     overflow: hidden;
     width: 10%;
     height: 50px;
@@ -28,5 +29,107 @@
 
 
 .main_section {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "a a b c";
+}
+
+.item {
+    grid-area: a;
+    background-color: #32a852;
+    height: 100px;
+    word-spacing: 1rem;
+    text-align: center;
+}
+
+.itemb {
+    grid-area: b;
+    background-color: #3279a8;
+}
+
+.itemc {
+    grid-area: c;
+    background-color: #a832a8;
+}
+
+.video {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Notable', sans-serif;
+    letter-spacing: 10px;
+    text-indent: 1rem;
+    margin-top: 2em;
+}
+
+.video > video {
+    border-style: solid;
+    border-color:  #8aad61;
+    border-width: thick;
+}
+
+.advanced{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.advanced a:active {
+    color: #ec42f5;
+}
+
+.advanced a:hover {
+    text-decoration: none;
+}
+
+td:first-child {
+    background-color: #FF0;
+}
+
+td:nth-child(even) {
+    background-color: #CFF;
+}
+
+td:nth-child(2n + 3) {
+    background-color: #FFF;
+}
+
+
+.cookies-message {
+    z-index: 9999;
+    position: fixed;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+}
+
+.cookies-message a {
+    color: red;
+    text-decoration: none;
+}
+
+.accept-button {
+    transition: all 0.5s ease;
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.accept-button:hover {
+    background-color: #000;
+    color: #fff;
 }

@@ -42,11 +42,6 @@ fieldset {
     display: flex;
     flex-direction: column;
     flex-grow: 2;
-    grid-template-areas: 
-        "a b b"
-        "a a a"
-        "a b b"
-        "a a a";
     gap: 20px;
     border: 0;
 }

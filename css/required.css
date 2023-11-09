@@ -80,6 +80,14 @@
     text-decoration: none;
 }
 
+p {
+    text-transform: uppercase;
+}
+
+p::first-letter {
+    color:orangered;
+}
+
 .advanced a:active {
     color: #ec42f5;
 }

@@ -13,6 +13,7 @@ html, body {
 
 a, p {
     text-decoration: none;
+    line-height: normal;
 }
 
 h1, h2 {
